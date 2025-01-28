@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社Jecコンサルティング</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: linear-gradient(45deg, #1a73e8, #0a5ae8);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .hero {
+            background-image: url('https://via.placeholder.com/1920x1080');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+            padding: 100px 15px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .services .card {
+            transition: transform 0.3s;
+        }
+
+        .services .card:hover {
+            transform: translateY(-10px);
+        }
+
+        footer {
+            background: #0a5ae8;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>株式会社Jecコンサルティング</h1>
+        <p>ビジネスに最適なソリューションを提供します</p>
+    </header>
+
+    <section class="hero text-center">
+        <h1>あなたの成功をサポートします</h1>
+        <p>最先端のコンサルティングサービスをご提供</p>
+        <a href="#contact" class="btn btn-primary btn-lg">お問い合わせ</a>
+    </section>
+
+    <section class="services py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">サービス内容</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">戦略コンサルティング</h5>
+                            <p class="card-text">効果的な戦略でビジネスの成長をサポート。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">ITソリューション</h5>
+                            <p class="card-text">最新技術で効率的な業務を実現。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">経営支援</h5>
+                            <p class="card-text">確かな支援で目標達成をサポート。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">お問い合わせ</h2>
+            <form action="save_contact.php" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">お名前</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="お名前を入力してください" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">メールアドレス</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="メールアドレスを入力してください" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">お問い合わせ内容</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="お問い合わせ内容を入力してください" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">送信</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 株式会社Jecコンサルティング. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
